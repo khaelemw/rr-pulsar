@@ -1,7 +1,7 @@
 #include <RetroRewind.hpp>
 #include <Gamemodes/EliminationDisplay.hpp>
 #include <Gamemodes/Spectating.hpp>
-#include <MarioKartWii/Race/Racedata.hpp>
+#include <MarioKartWii/Race/RaceData.hpp>
 #include <MarioKartWii/Kart/KartManager.hpp>
 #include <MarioKartWii/Race/RaceInfo/RaceInfo.hpp>
 #include <MarioKartWii/UI/Ctrl/CtrlRace/CtrlRaceTime.hpp>

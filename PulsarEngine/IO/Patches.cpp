@@ -31,8 +31,8 @@
 #include <core/rvl/arc/arc.hpp>
 #include <core/rvl/dvd/dvd.hpp>
 #include <core/rvl/OS/OSBootInfo.hpp>
-#include <core/rvl/os/OS.hpp>
-#include <core/rvl/os/OSCache.hpp>
+#include <core/rvl/OS/OS.hpp>
+#include <core/rvl/OS/OSCache.hpp>
 
 namespace Pulsar {
 namespace IOOverrides {

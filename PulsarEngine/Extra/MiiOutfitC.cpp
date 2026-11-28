@@ -9,7 +9,7 @@
 #include <MarioKartWii/Kart/KartFunctions.hpp>
 #include <core/egg/DVD/DvdRipper.hpp>
 #include <core/rvl/OS/OS.hpp>
-#include <core/rvl/os/OSCache.hpp>
+#include <core/rvl/OS/OSCache.hpp>
 #include <core/rvl/dvd/dvd.hpp>
 #include <IO/SDIO.hpp>
 #include <RetroRewindChannel.hpp>

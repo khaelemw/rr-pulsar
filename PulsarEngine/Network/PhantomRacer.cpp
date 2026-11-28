@@ -2,7 +2,7 @@
 #include <kamek.hpp>
 #include <MarioKartWii/RKNet/RKNetController.hpp>
 #include <MarioKartWii/RKNet/SELECT.hpp>
-#include <MarioKartWii/RKNet/User.hpp>
+#include <MarioKartWii/RKNet/USER.hpp>
 #include <MarioKartWii/UI/Section/SectionMgr.hpp>
 #include <core/rvl/DWC/DWCCore.hpp>
 #include <core/rvl/OS/OS.hpp>

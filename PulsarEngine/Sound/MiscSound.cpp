@@ -7,7 +7,7 @@
 #include <MarioKartWii/Scene/GameScene.hpp>
 #include <core/egg/Audio/AudioHeap.hpp>
 #include <core/egg/mem/ExpHeap.hpp>
-#include <core/rvl/os/OS.hpp>
+#include <core/rvl/OS/OS.hpp>
 #include <core/nw4r/snd/BasicSound.hpp>
 #include <Sound/MiscSound.hpp>
 #include <Settings/Settings.hpp>

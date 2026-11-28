@@ -2,7 +2,7 @@
 #include <MarioKartWii/RKNet/RKNetController.hpp>
 #include <MarioKartWii/Archive/ArchiveMgr.hpp>
 #include <PulsarSystem.hpp>
-#include <core/rvl/os/OS.hpp>
+#include <core/rvl/OS/OS.hpp>
 #include <Gamemodes/KO/KOMgr.hpp>
 #include <Network/GPReport.hpp>
 #include <Network/Network.hpp>

@@ -9,7 +9,7 @@
 #include <MarioKartWii/UI/Ctrl/SheetSelect.hpp>
 #include <MarioKartWii/UI/Ctrl/CountDown.hpp>
 #include <MarioKartWii/UI/Ctrl/MessageWindowControl.hpp>
-#include <MarioKartWii/RKNet/Room.hpp>
+#include <MarioKartWii/RKNet/ROOM.hpp>
 
 //_sinit_ at 805de9bc
 namespace Pages {

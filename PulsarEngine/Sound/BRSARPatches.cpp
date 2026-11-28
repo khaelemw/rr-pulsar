@@ -25,7 +25,7 @@
 #include <core/nw4r/ut/Misc.hpp>
 #include <core/rvl/OS/OSCache.hpp>
 #include <core/rvl/dvd/dvd.hpp>
-#include <core/rvl/os/OS.hpp>
+#include <core/rvl/OS/OS.hpp>
 #include <include/c_stdio.h>
 
 namespace Pulsar {

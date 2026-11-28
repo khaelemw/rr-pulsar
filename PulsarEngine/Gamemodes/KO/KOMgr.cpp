@@ -1,7 +1,7 @@
 #include <MarioKartWii/Race/RaceInfo/RaceInfo.hpp>
 #include <MarioKartWii/UI/Page/Page.hpp>
 #include <MarioKartWii/Input/InputManager.hpp>
-#include <GameModes/KO/KOMgr.hpp>
+#include <Gamemodes/KO/KOMgr.hpp>
 #include <Network/PacketExpansion.hpp>
 #include <Gamemodes/KO/KORaceEndPage.hpp>
 #include <Settings/Settings.hpp>

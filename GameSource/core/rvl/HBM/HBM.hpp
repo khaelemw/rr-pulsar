@@ -2,7 +2,7 @@
 #define _HBM_
 #include <types.hpp>
 #include <core/rvl/MEM/MEMallocator.hpp>
-#include <core/rvl/mtx/MTX.hpp>
+#include <core/rvl/mtx/mtx.hpp>
 #include <core/rvl/KPAD.hpp>
 
 namespace HBM {

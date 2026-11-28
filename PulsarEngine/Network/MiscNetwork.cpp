@@ -1,7 +1,7 @@
 #include <kamek.hpp>
 #include <MarioKartWii/RKNet/RKNetController.hpp>
-#include <MarioKartWii/RKNet/Select.hpp>
-#include <MarioKartWii/System/random.hpp>
+#include <MarioKartWii/RKNet/SELECT.hpp>
+#include <MarioKartWii/System/Random.hpp>
 #include <MarioKartWii/Race/RaceData.hpp>
 #include <MarioKartWii/UI/Page/Other/WWRaceSupporting.hpp>
 #include <MarioKartWii/UI/Section/SectionMgr.hpp>

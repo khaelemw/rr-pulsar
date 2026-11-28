@@ -3,7 +3,7 @@
 #include <core/System/SystemManager.hpp>
 #include <MarioKartWii/UI/Section/SectionMgr.hpp>
 #include <MarioKartWii/UI/Section/Section.hpp>
-#include <MarioKartWii/Race/Racedata.hpp>
+#include <MarioKartWii/Race/RaceData.hpp>
 #include <MarioKartWii/RKNet/RKNetController.hpp>
 #include <MarioKartWii/RKNet/USER.hpp>
 #include <Config.hpp>

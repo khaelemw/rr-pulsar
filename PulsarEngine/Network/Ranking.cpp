@@ -3,8 +3,8 @@
 #include <Network/Ranking.hpp>
 #include <Network/NHTTPHelper.hpp>
 #include <Network/WiiLink.hpp>
-#include <MarioKartWii/Race/Racedata.hpp>
-#include <MarioKartWii/Race/Raceinfo/Raceinfo.hpp>
+#include <MarioKartWii/Race/RaceData.hpp>
+#include <MarioKartWii/Race/RaceInfo/RaceInfo.hpp>
 #include <MarioKartWii/RKSYS/LicenseMgr.hpp>
 #include <MarioKartWii/System/Identifiers.hpp>
 #include <MarioKartWii/RKSYS/RKSYSMgr.hpp>

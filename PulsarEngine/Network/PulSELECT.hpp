@@ -2,7 +2,7 @@
 #define _PUL_SELECT_
 
 #include <kamek.hpp>
-#include <MarioKartWii/RKNet/Select.hpp>
+#include <MarioKartWii/RKNet/SELECT.hpp>
 #include <Network/Network.hpp>
 namespace Pulsar {
 class CupsConfig;

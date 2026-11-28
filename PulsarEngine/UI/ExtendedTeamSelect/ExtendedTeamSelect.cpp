@@ -2,7 +2,7 @@
 #include <MarioKartWii/UI/Page/Other/FriendRoom.hpp>
 #include <MarioKartWii/UI/Page/Other/Message.hpp>
 #include <MarioKartWii/RKNet/RKNetController.hpp>
-#include <MarioKartWii/System/random.hpp>
+#include <MarioKartWii/System/Random.hpp>
 #include <Network/GPReport.hpp>
 #include <Network/FroomCPUs.hpp>
 #include <core/nw4r/ut/Misc.hpp>

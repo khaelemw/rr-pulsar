@@ -6,7 +6,7 @@
 #include <MarioKartWii/RKNet/FriendMgr.hpp>
 #include <MarioKartWii/Mii/Mii.hpp>
 #include <include/c_string.h>
-#include <MarioKartWii/System/random.hpp>
+#include <MarioKartWii/System/Random.hpp>
 #include <Settings/Settings.hpp>
 #include <PulsarSystem.hpp>
 #include <Network/PacketExpansion.hpp>

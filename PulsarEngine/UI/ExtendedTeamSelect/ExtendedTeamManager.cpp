@@ -1,7 +1,7 @@
 #include <UI/ExtendedTeamSelect/ExtendedTeamManager.hpp>
 #include <UI/ExtendedTeamSelect/ExtendedTeamSelect.hpp>
 #include <Settings/Settings.hpp>
-#include <MarioKartWii/System/random.hpp>
+#include <MarioKartWii/System/Random.hpp>
 #include <MarioKartWii/UI/Page/Other/FriendRoom.hpp>
 #include <MarioKartWii/UI/Page/Other/SELECTStageMgr.hpp>
 #include <GlobalFunction.hpp>
