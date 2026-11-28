@@ -12,8 +12,6 @@
 namespace Pulsar {
 
 void LoadCorrectSectionForBattle() {
-    if (!IsBattle)
-        return;
     SectionMgr *sectionMgr = SectionMgr::sInstance;
     const RacedataSettings &racedataSettings = Racedata::sInstance->menusScenario.settings;
     const GameMode mode = racedataSettings.gamemode;

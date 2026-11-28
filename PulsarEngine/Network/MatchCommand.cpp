@@ -73,8 +73,13 @@ DWC::MatchCommand Process(DWC::MatchCommand type, const void *data, u32 dataSize
 
 static int GetSuspendType(int r3, const char *string) {
     DWC::Printf(r3, string);
-    const u32 errorType = 0x120000000 + Pulsar::System::sInstance->netMgr.denyType << 28;
-    return errorType;
+    const u32 normalDenyError = 0x12000000;
+    const u32 pulsarDenyErrorBase = 0x20;
+    const u32 denyErrorShift = 24;
+    const DenyType denyType = Pulsar::System::sInstance->netMgr.denyType;
+    if (denyType == DENY_TYPE_NORMAL)
+        return normalDenyError;
+    return (pulsarDenyErrorBase + denyType) << denyErrorShift;
 }
 kmCall(0x800dc9e8, GetSuspendType);
 kmWrite32(0x800dc9f4, 0x906100d8);

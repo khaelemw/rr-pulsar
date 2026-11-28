@@ -2690,7 +2690,7 @@ static bool EmitStructuralExistingFileNode(u32 oldNodeIdx, StructuralRebuildCont
             return false;
         }
         if (context.entryAppliedBits != nullptr) {
-            context.entryAppliedBits[idx - context.rangeStart >> 5] |= (1u << (idx - context.rangeStart & 31));
+            context.entryAppliedBits[(idx - context.rangeStart) >> 5] |= (1u << ((idx - context.rangeStart) & 31));
         }
         ++context.patchedNodes;
     } else {
@@ -2731,7 +2731,7 @@ static bool EmitStructuralAddedFileNode(u32 addedIndex, StructuralRebuildContext
     context.writeOffset = writeOffset + paddedSize;
 
     if (context.entryAppliedBits != nullptr) {
-        context.entryAppliedBits[added.overrideIndex - context.rangeStart >> 5] |= (1u << (added.overrideIndex - context.rangeStart & 31));
+        context.entryAppliedBits[(added.overrideIndex - context.rangeStart) >> 5] |= (1u << ((added.overrideIndex - context.rangeStart) & 31));
     }
     ++context.patchedNodes;
     return true;
@@ -2783,7 +2783,7 @@ static void MarkDeletedOverridesInSubtree(u32 oldDirIdx, StructuralRebuildContex
             continue;
 
         if (context.entryAppliedBits != nullptr) {
-            context.entryAppliedBits[deleteIdx - context.rangeStart >> 5] |= (1u << (deleteIdx - context.rangeStart & 31));
+            context.entryAppliedBits[(deleteIdx - context.rangeStart) >> 5] |= (1u << ((deleteIdx - context.rangeStart) & 31));
         }
         ++context.patchedNodes;
     }
@@ -2827,7 +2827,7 @@ static bool EmitStructuralDirectoryChildren(u32 oldDirIdx, u32 parentNewIdx, Str
             const u16 deleteIdx = context.nodeOverrideIndex[childIdx];
             if (deleteIdx != kInvalidScratchIndex16) {
                 if (context.entryAppliedBits != nullptr) {
-                    context.entryAppliedBits[deleteIdx - context.rangeStart >> 5] |= (1u << (deleteIdx - context.rangeStart & 31));
+                    context.entryAppliedBits[(deleteIdx - context.rangeStart) >> 5] |= (1u << ((deleteIdx - context.rangeStart) & 31));
                 }
                 ++context.patchedNodes;
             }
@@ -3321,7 +3321,7 @@ static u32 ApplyInPlaceLooseOverrides(u8 *archiveBase, U8Node *nodes, u32 nodeCo
         nodes[nodeIdx].dataSize = entry.size;
         OS::DCStoreRange(dest, entry.size);
         if (entryAppliedBits != nullptr) {
-            entryAppliedBits[idx - rangeStart >> 5] |= (1u << (idx - rangeStart & 31));
+            entryAppliedBits[(idx - rangeStart) >> 5] |= (1u << ((idx - rangeStart) & 31));
         }
         ++patchedNodes;
     }
@@ -3806,7 +3806,7 @@ bool ApplyLooseOverrides(const char *archiveBaseLower, u8 *&archiveBase, u32 &ar
                 continue;
             }
             if (entryAppliedBits != nullptr) {
-                entryAppliedBits[idx - rangeStart >> 5] |= (1u << (idx - rangeStart & 31));
+                entryAppliedBits[(idx - rangeStart) >> 5] |= (1u << ((idx - rangeStart) & 31));
             }
             ++patchedNodes;
         }
@@ -3842,7 +3842,7 @@ bool ApplyLooseOverrides(const char *archiveBaseLower, u8 *&archiveBase, u32 &ar
                     repackPartialFailure = true;
                 } else {
                     if (entryAppliedBits != nullptr) {
-                        entryAppliedBits[idx - rangeStart >> 5] |= (1u << (idx - rangeStart & 31));
+                        entryAppliedBits[(idx - rangeStart) >> 5] |= (1u << ((idx - rangeStart) & 31));
                     }
                     ++patchedNodes;
                 }

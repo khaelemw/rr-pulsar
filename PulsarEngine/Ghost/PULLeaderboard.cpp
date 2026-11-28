@@ -48,7 +48,8 @@ Leaderboard::Leaderboard(const char *folderPath, PulsarId id, bool createNew) {
     if (ret)
         ret = io->Read(sizeof(Leaderboard), this);
 
-    if (!ret || this->crc32 != crc32 || magic != fileMagic) {
+    const bool isWrongTrack = !CupsConfig::IsReg(id) && this->crc32 != CupsConfig::sInstance->GetCRC32(id);
+    if (!ret || isWrongTrack || magic != fileMagic) {
         if (createNew)
             this->CreateFile(id);
         new (this) Leaderboard;

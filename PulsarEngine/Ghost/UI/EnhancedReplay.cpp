@@ -62,7 +62,7 @@ kmCall(0x808570a0, WillGhostBeCompared);
 kmWrite32(0x80857088, 0x40820018);
 kmWrite32(0x808570a4, 0x2C030001);
 static u8 CharCheerGetCorrectArguments(int r3, u8 id) {
-    u8 ret = Racedata::sInstance->racesScenario.players[id].hudSlotId;
+    s8 ret = Racedata::sInstance->racesScenario.players[id].hudSlotId;
     if (ret == -1)
         ret = 0;
     return ret;
