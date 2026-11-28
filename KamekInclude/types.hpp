@@ -80,6 +80,9 @@ struct _AssertEq {
 // #define size_assert(type, num) static_assert(sizeof(type) == (num), "type")
 #define static_assert(...)
 #define offset_assert(type, member, off)
+#undef offsetof
+#define offsetof(st, m) __builtin_offsetof(st, m)
+#define alignas(value)
 #else
 #define asmFunc asm void
 #define asmVolatile asm volatile

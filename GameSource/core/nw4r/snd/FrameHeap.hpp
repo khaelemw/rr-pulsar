@@ -32,7 +32,7 @@ public:
     void *Alloc(u32 size, void *callbackFunc, void *callbackArg);  // 80092450
     u32 GetFreeSize() const;  // 80092810
     void *MEMiHeapHead;
-    ut::LinkList<Section, offsetof(Section, Section::link)> sectionlist;
+    ut::LinkList<Section, offsetof(Section, link)> sectionlist;
 };  // total size 0x10
 // size_assert(FrameHeap, 0x10);
 

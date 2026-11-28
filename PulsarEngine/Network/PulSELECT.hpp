@@ -23,8 +23,8 @@ void StoreBlockedTrack(System &system, PulsarId trackId);
             blr;                                              \
         ); \
     };                                                                                                              \
-    kmBranch(##addr, GetRecvPulSELECTPacket##addr);                                                                 \
-    kmPatchExitPoint(GetRecvPulSELECTPacket##addr, ##addr + 4);
+    kmBranch(addr, GetRecvPulSELECTPacket##addr);                                                                   \
+    kmPatchExitPoint(GetRecvPulSELECTPacket##addr, addr + 4);
 
 }  // namespace Network
 }  // namespace Pulsar

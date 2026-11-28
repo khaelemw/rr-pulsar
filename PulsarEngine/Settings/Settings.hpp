@@ -219,9 +219,7 @@ private:
     u32 trophyEntryCount;
     friend class System;
     friend class UI::SettingsPanel;
-    // Two ghosts functions which save the settings
-    friend bool Ghosts::Mgr::SaveGhost(const RKSYS::LicenseLdbEntry &entry, u32 ldbPosition, bool isFlap);
-    friend void Ghosts::Mgr::CreateAndSaveFiles(Ghosts::Mgr *manager);
+    friend class Ghosts::Mgr;
     friend class UI::ExpGhostSelect;
 };
 }  // namespace Settings

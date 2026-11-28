@@ -7,7 +7,9 @@ extern "C" {
 
 #ifndef _SIZE_T_DEFINED
 #define _SIZE_T_DEFINED
-#ifdef __INTELLISENSE__
+#if defined(__INTELLISENSE__) && defined(__SIZE_TYPE__)
+typedef __SIZE_TYPE__ size_t;
+#elif defined(__INTELLISENSE__)
 typedef unsigned long long size_t;
 #else
 typedef unsigned long size_t;

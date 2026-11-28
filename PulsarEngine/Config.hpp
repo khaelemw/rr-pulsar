@@ -114,7 +114,7 @@ struct ConfigFile {
 };
 
 template <>
-static inline void ConfigFile::CheckSection<PulBMG>(const PulBMG &bmg) {
+inline void ConfigFile::CheckSection<PulBMG>(const PulBMG &bmg) {
     if (bmg.header.magic != 0x4D455347626D6731)
         Debug::FatalError(error);
 }

@@ -20,7 +20,7 @@ public:
     void vf_0x48() override;  // 0x48 80554f88
     int GetScreenCount() override;  // 0x4c 80554f68, number of local players except in 3P
     int vf_0x50() override;  // 0x50 80554f94
-    bool isPaused() override;  // 0x54 80554e14
+    bool isPaused() const override;  // 0x54 80554e14
     void vf_0x58() override;  // 0x58 805549ac
     nw4r::ut::RomFont romFont;  // 0x254c
     ExpHeap *kartModelHeap;  // 0x2568 //0x2568
