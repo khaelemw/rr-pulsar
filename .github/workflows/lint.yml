@@ -1,0 +1,21 @@
+name: lint
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    name: clang-lint
+    runs-on: ubuntu-latest
+    container: archlinux:latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Install clang
+        run: pacman -Syu --noconfirm clang
+      - name: Run clang lint
+        run: bash scripts/check_clang_lint.sh
